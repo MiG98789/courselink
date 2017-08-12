@@ -1,0 +1,12 @@
+{
+    "manifest_version": 2,
+
+    "name": "HKUST Course Rater",
+    "description": "A Chrome extension to view HKUST course ratings directly on the course catalog webpage",
+    "version": "1.0",
+
+    "permissions": [
+        "activeTab",
+        "https://ajax.googleapis.com/"
+    ]
+}
