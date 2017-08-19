@@ -2,8 +2,17 @@
     "manifest_version": 2,
 
     "name": "Rate My HKUST Course",
-    "description": "A Chrome extension to view HKUST course ratings directly on the course catalog webpage",
     "version": "0.1",
+    "description": "A Chrome extension to view HKUST course ratings directly on the course catalog webpage",
+
+    "browser_action": {
+        "default_title": "Rate My HKUST Course"
+    },
+
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+    },
 
     "permissions": [
         "activeTab"
