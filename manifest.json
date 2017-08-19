@@ -14,6 +14,13 @@
         "persistent": false
     },
 
+    "content_scripts": [
+        {
+            "matches": ["*://w5.ab.ust.hk/wcq/cgi-bin/1710/*"],
+            "js": ["main.js"]
+        }
+    ],
+
     "permissions": [
         "activeTab"
     ]
