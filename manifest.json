@@ -3,7 +3,7 @@
 
     "name": "HKUST Course Rater",
     "description": "A Chrome extension to view HKUST course ratings directly on the course catalog webpage",
-    "version": "1.0",
+    "version": "0.1",
 
     "permissions": [
         "activeTab",
