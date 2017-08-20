@@ -8,6 +8,6 @@ if (document.readyState === "complete") {
         var url = "https://ust.space/review/" + courseCode;
         console.log(url);
 
-        courses[i].innerHTML +=  " <a class='rating lower-bar upper-bar' target='_blank' href=" + url + ">Rating</a>";
+        courses[i].innerHTML +=  " <a class='rating lower-bar' target='_blank' href=" + url + ">Rating</a>";
     }
 }
