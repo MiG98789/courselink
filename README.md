@@ -1,2 +1,2 @@
 # Rate My HKUST Course
-A Chrome extension to view HKUST course ratings directly on the course catalog webpage
+A Chrome extension to link HKUST course ratings with the Schedule & Quota page

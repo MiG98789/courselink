@@ -1,0 +1,46 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+a.rating, a.rating:visited, a.rating:hover, a.rating:active {
+    position: relative;
+    text-decoration: none;
+    color: #3F6C45;
+    opacity: 0.6;
+    transition: all 0.5s ease-in-out 0s;
+}
+
+a.rating:hover {
+    color: #2988BC;
+    opacity: 0.9;
+    transition: all 0.5s ease-in-out 0s;
+}
+
+a.up:before, a.down:after {
+    content: "";
+    transition: 0.5s all ease;
+    backface-visibility: hidden;
+    position: absolute;
+    height: 2px;
+    width: 0;
+    background: #2988BC;
+    opacity: 1;
+}
+
+a.up:before {
+    top:-0.15em;
+}
+
+a.down:after {
+    bottom: -0.25em;
+}
+
+a.rating:before {
+    left: 0;
+}
+
+a.rating:after {
+    right: 0;
+}
+
+a.up:hover:before, a.down:hover:after {
+    width: 100%;
+}
