@@ -1,35 +1,33 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
-a.rating, a.rating:visited, a.rating:hover, a.rating:active {
+a.rating, a.rating:active, a.rating:hover, a.rating:visited {
     position: relative;
     text-decoration: none;
-    color: #3F6C45;
-    opacity: 0.6;
-    transition: all 0.5s ease-in-out 0s;
+    color: #388E8E;
+    opacity: 0.8;
+    transition: all 0.25s ease-in-out 0s;
 }
 
 a.rating:hover {
-    color: #2988BC;
+    color: #5E2D79;
     opacity: 0.9;
-    transition: all 0.5s ease-in-out 0s;
 }
 
-a.up:before, a.down:after {
+a.upper-bar:before, a.lower-bar:after {
     content: "";
-    transition: 0.5s all ease;
-    backface-visibility: hidden;
     position: absolute;
     height: 2px;
     width: 0;
-    background: #2988BC;
-    opacity: 1;
+    background: #5E2D79;
+    opacity: 0.9;
+    transition: all 0.25s ease-in-out 0s;
 }
 
-a.up:before {
-    top:-0.15em;
+a.upper-bar:before {
+    top: -0.15em;
 }
 
-a.down:after {
+a.lower-bar:after {
     bottom: -0.25em;
 }
 
@@ -41,6 +39,6 @@ a.rating:after {
     right: 0;
 }
 
-a.up:hover:before, a.down:hover:after {
+a.lower-bar:hover:before, a.upper-bar:hover:after {
     width: 100%;
 }
