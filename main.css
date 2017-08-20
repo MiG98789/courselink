@@ -5,40 +5,27 @@ a.rating, a.rating:active, a.rating:hover, a.rating:visited {
     text-decoration: none;
     color: #388E8E;
     opacity: 0.8;
-    transition: all 0.25s ease-in-out 0s;
+    transition: all 0.15s ease-in-out 0s;
 }
 
 a.rating:hover {
     color: #5E2D79;
-    opacity: 0.9;
-}
-
-a.upper-bar:before, a.lower-bar:after {
-    content: "";
-    position: absolute;
-    height: 2px;
-    width: 0;
-    background: #5E2D79;
-    opacity: 0.9;
-    transition: all 0.25s ease-in-out 0s;
-}
-
-a.upper-bar:before {
-    top: -0.15em;
+    opacity: 1;
 }
 
 a.lower-bar:after {
-    bottom: -0.25em;
-}
-
-a.rating:before {
+    content: "";
     left: 0;
-}
-
-a.rating:after {
-    right: 0;
-}
-
-a.lower-bar:hover:before, a.upper-bar:hover:after {
+    bottom: -0.20em;
+    height: 2px;
     width: 100%;
+    background: #5E2D79;
+    opacity: 0.9;
+    position: absolute;
+    transform: scaleX(0);
+    transition: all 0.15s ease-in-out 0s;
+}
+
+a.lower-bar:hover:after {
+    transform: scaleX(1);
 }
