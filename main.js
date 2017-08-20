@@ -22,7 +22,24 @@ function addCourseRatings(ratings) {
     }
 }
 
+function addCSS() {
+    var css = [
+        "#ratingTable {",
+        "text-align: center;",
+        //"margin: 0 auto;",
+        "}"
+    ].join('');
+
+    var style = document.createElement("style");
+    style.setAttribute("type", "text/css");
+    style.appendChild(document.createTextNode(css));
+
+    document.head.appendChild(style);
+}
+
 if (document.readyState === "complete") {
+    addCSS();
+    
     var test = [
     {
         "content":"A",
