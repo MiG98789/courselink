@@ -1,7 +1,9 @@
 function addCourseRatings(ratings) {
     var courseTables = document.getElementsByClassName("sections");
+    var courses = document.getElementsByTagName("h2");
 
     for (var i = 0; i < courseTables.length; i++) {
+        var courseCode = courses[i].innerHTML.slice(0,10).replace(/\s/g, '');
         // var rating = document.createElement("div");
         // rating.setAttribute("class", "course rating");
         var div = [
@@ -15,7 +17,7 @@ function addCourseRatings(ratings) {
         "</tr></table></div>"
         ].join('');
 
-        console.log("Rating course " + i);
+        console.log("Rating " + courseCode);
         courseTables[i].insertAdjacentHTML("beforebegin", div);
     }
 }
