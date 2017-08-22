@@ -2,7 +2,7 @@
     "manifest_version": 2,
 
     "name": "CourseScape",
-    "version": "1.3",
+    "version": "1.4",
     "description": "A Chrome extension to make HKUST's course-related information more accessible",
 
     "browser_action": {
@@ -16,9 +16,14 @@
 
     "content_scripts": [
         {
-            "matches": ["*://w5.ab.ust.hk/wcq/cgi-bin/1710/*"],
+            "matches": ["https://w5.ab.ust.hk/wcq/cgi-bin/1710/*"],
             "css": ["main.css"],
             "js": ["main.js"]
         }
+    ],
+
+    "permissions": [
+        "https://ust.space/review/",
+        "https://w5.ab.ust.hk/wcq/cgi-bin/1710/*"
     ]
 }
