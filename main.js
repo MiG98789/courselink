@@ -15,6 +15,6 @@ if (document.readyState === "complete") {
 
         var courseJSON = { code: courseCode };
         console.log("Getting " + courseJSON.code + " rating");
-        getCoursePage(courseJSON);
+        // getCoursePage(courseJSON);
     }
 }
