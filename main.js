@@ -1,5 +1,6 @@
 function getCoursePage(course) {
     return chrome.runtime.sendMessage(course, function(response) {
+        var oldResponse = JSON.parse(response);
         console.log("Message response: " + response);
     });
 }
@@ -13,8 +14,8 @@ if (document.readyState === "complete") {
         console.log(courseCode + "\'s URL: " + url);
         courses[i].innerHTML +=  " <a class='rating lower-bar' target='_blank' href=" + url + ">Rating</a>";
 
-        var courseJSON = { code: courseCode };
+        var courseJSON = {code: courseCode};
         console.log("Getting " + courseJSON.code + " rating");
-        // getCoursePage(courseJSON);
+        getCoursePage(courseJSON);
     }
 }
