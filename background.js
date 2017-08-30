@@ -4,7 +4,7 @@ function sendRequest(url) {
         if (xhttp.readyState == 4 && xhttp.status == 200) {
             console.log("XHTTP URL: " + url);
             console.log("XHTTP response: " + xhttp.responseText);
-            return response = xhttp.responseUrl;
+            return xhttp.responseText;
         }
     };
     xhttp.open("GET", url, true);
