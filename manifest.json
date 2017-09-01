@@ -2,7 +2,7 @@
     "manifest_version": 2,
 
     "name": "CourseScape",
-    "version": "1.5",
+    "version": "1.5.1",
     "description": "A Chrome extension to make HKUST's course-related information more accessible",
 
     "browser_action": {
@@ -23,7 +23,6 @@
     ],
 
     "permissions": [
-        "https://ust.space/review/",
-        "https://w5.ab.ust.hk/wcq/cgi-bin/1710/*"
+        "https://ust.space/review/*"
     ]
 }
