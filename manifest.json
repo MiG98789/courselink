@@ -1,12 +1,12 @@
 {
     "manifest_version": 2,
 
-    "name": "CourseScape",
-    "version": "1.4.2",
+    "name": "CourseLink",
+    "version": "1.4.3",
     "description": "A Chrome extension to make HKUST's course-related information more accessible",
 
     "browser_action": {
-        "default_title": "CourseScape"
+        "default_title": "CourseLink"
     },
 
     "background": {

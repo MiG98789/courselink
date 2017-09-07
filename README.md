@@ -1,4 +1,4 @@
-# CourseScape
+# CourseLink
 This is a Chrome extension to make HKUST's course-related information more accessible.
 
 ## Getting Started
